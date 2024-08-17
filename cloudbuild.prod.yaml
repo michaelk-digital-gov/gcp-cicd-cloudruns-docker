@@ -33,7 +33,7 @@ options:
 substitutions:
     _SERVICE_IMAGE    : us-central1-docker.pkg.dev/${PROJECT_ID}/${_DOCKER_REGISTRY}/${_DOCKER_IMAGENAME}:${SHORT_SHA}
     _SERVICE_REGION   : us-central1
-    _SERVICE_PROJECT  : michael-docker-cr-prod
+    _SERVICE_PROJECT  : michael-docker-cr
     _SERVICE_NAME     : my-docker-app-prod
     _DOCKER_REGISTRY  : michaelk-docker-repo
     _DOCKER_IMAGENAME : myapp-prod
