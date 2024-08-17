@@ -23,10 +23,13 @@ steps:
       - --project=$_SERVICE_PROJECT
       - --region=$_SERVICE_REGION
       - --image=$_SERVICE_IMAGE
-
+  
 images: # Display the image in the build results - Build Artifacts
 - $_SERVICE_IMAGE
 
+options:
+  logging: CLOUD_LOGGING_ONLY
+  
 substitutions:
     _SERVICE_IMAGE    : us-central1-docker.pkg.dev/${PROJECT_ID}/${_DOCKER_REGISTRY}/${_DOCKER_IMAGENAME}:${SHORT_SHA}
     _SERVICE_REGION   : us-central1
