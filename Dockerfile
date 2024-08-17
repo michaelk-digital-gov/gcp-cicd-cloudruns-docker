@@ -3,7 +3,7 @@
 # Copyleft (c) by Michael Kravtsiv
 #---------------------------------------------------------------------------
 
-FROM ubuntu:21.04
+FROM ubuntu:24.04
 
 RUN apt-get -y update
 RUN apt-get -y install apache2
